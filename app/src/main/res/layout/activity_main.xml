@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context="com.driftycode.templatecounter.MainActivity"
+    tools:deviceIds="wear">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/inner_frame_layout_padding"
+        app:boxedEdges="all">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:weightSum="3"
+            android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_minus"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:background="@drawable/button_shape"
+            android:layout_width="50dp"
+            android:textSize="28sp"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/tv_counter"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="108" />
+
+        <Button
+            android:id="@+id/btn_plus"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:background="@drawable/button_shape"
+            android:layout_width="50dp"
+            android:textSize="28sp"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+        </LinearLayout>
+    </FrameLayout>
+</android.support.wear.widget.BoxInsetLayout>
+
